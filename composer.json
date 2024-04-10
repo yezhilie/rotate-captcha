@@ -1,0 +1,50 @@
+{
+    "name": "isszz/rotate-captcha",
+    "description": "Rotate image captcha",
+    "keywords": [
+        "captcha",
+        "rotate captcha",
+        "think",
+        "thinkphp",
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "isszz",
+            "email": "isszz@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "files": [
+            "src/helper.php"
+        ],
+        "psr-4": {
+            "isszz\\captcha\\rotate\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-dev"
+        },
+        "think": {
+            "config":{
+                "rotateCaptcha": "src/config/config.php"
+            }
+        },
+        "laravel": {
+            "config":{
+                "rotateCaptcha": "src/config/config.php"
+            }
+        }
+    }
+}
