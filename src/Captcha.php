@@ -158,9 +158,9 @@ class Captcha
 	 *
 	 * @return array
 	 */
-	public function get($size = 350): array
+	public function get($size = null): array
 	{
-		$this->size = $size ?? 350;
+		$this->size = $size ?? $this->config('size') ?? 350;
 
 		if($this->size < 150) {
 			$this->size = 150;
