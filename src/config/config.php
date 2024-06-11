@@ -7,7 +7,7 @@ use isszz\captcha\rotate\store\SessionStore;
 return [
     'size' => 350, // 生成图片尺寸
     'expire' => 300, // 生成验证有效期
-    'outputType' => 'webp', // 输出类型, png, jpg, webp
+    'outputType' => 'png', // 输出类型, png, jpg, webp
     'salt' => '%%*$*$#$~#$^isszz@cfyun.cc^&*$#$~',
     'handle' => 'gd',
     'earea' => 10, // 容错率
